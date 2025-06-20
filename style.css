@@ -4,11 +4,12 @@
     height: 500px;
   position: absolute;
   background-color: teal;
-  display: flex;
-  align-items: center;
+  display: none;
+  
   margin-top: 250px;
   margin-left: 35%;
     margin-right: 80%;
+    transform: translate(-50%, -50%);
   
 }
 body {
