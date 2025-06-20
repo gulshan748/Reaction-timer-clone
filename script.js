@@ -13,11 +13,11 @@ var start = new Date().getTime();
 //This function is to show the shape with random size, position, color, shape
     function move() {
         var container =  document.querySelector(".floatarea");
-        var maxLeft = container.clientWidth - wh;
-        var maxTop = container.clientHeight - wh;
-        var left = Math.random() * maxLeft;
-        var top = Math.random() * maxTop;
-        var wh = (Math.random() * 300) + 200 ; 
+        var maxLeft = container.clientWidth ;
+        var maxTop = container.clientHeight ;
+        var left = Math.random() *  (maxLeft - 40) + 20;
+        var top = Math.random() *(maxTop - 50) + 50;
+        var wh = (Math.random() * 200) + 150 ; 
         var radius = Math.floor(Math.random() * 51) + "%";
         var shape = document.getElementById("shape");
         shape.style.left = left + "px";
