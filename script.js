@@ -1,8 +1,8 @@
 
 // This function is to generate a random color everytime when user click on the shape 
 function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
+  var letters = '0123456789ABCDEF';
+  var color = '#';
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
@@ -15,6 +15,7 @@ var start = new Date().getTime();
         var left = Math.random() * 300;
         var top = Math.random() * 300;
         var wh = (Math.random() * 200) + 100; 
+        var radius = Math.floor(Math.random() * 51) + "%";
         var shape = document.getElementById("shape");
         shape.style.left = left + "px";
         shape.style.top = top + "px";
@@ -22,6 +23,8 @@ var start = new Date().getTime();
         shape.style.height = wh + "px";
         shape.style.display = "block";
         shape.style.backgroundColor= getRandomColor()
+        shape.style.borderRadius= radius
+        shape.style.flex= "center";
         start = new Date().getTime();
     }
 // This funtion is to capture the time  of user engagement between the very first moment of interaction with the webpage  to  the moment when he clicks on the shape 
