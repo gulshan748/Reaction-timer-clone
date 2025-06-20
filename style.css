@@ -26,7 +26,7 @@ body {
      text-shadow: 2px 2px 10px black;
      color: white;
      -webkit-text-stroke: 1px black;
-     font-size: 30px;
+     font-size: 3rem;
      font-family: cursive;
      word-wrap: break-word;
 
@@ -36,7 +36,7 @@ body {
   margin: 0;
   margin-bottom: 10px;
   font-family: cursive;
-  font-size: 20px;
+  font-size: 2.5rem;
   word-wrap: break-word;
  
 }
@@ -59,6 +59,11 @@ body {
   }
 
   .floatarea {
-    height: 350px; /* for small screens */
+    height: 400px; /* for small screens */
+  }
+   #shape {
+    max-width: 250px ;
+    max-height: 250px ;
   }
 }
+/* now  */
