@@ -65,9 +65,6 @@ body {
   .floatarea {
     height: 400px; /* for small screens */
   }
-   #shape {
-    max-width: 250px ;
-    max-height: 250px ;
-  }
+   
 }
 /* now  */
