@@ -12,6 +12,9 @@ body {
 
 .header {
   padding: 20px 10px;
+  position: relative;
+  z-index: 20;
+  background-color: #f4f4f4;
 }
 
 h1 {
@@ -24,27 +27,15 @@ p {
   margin: 10px 0 20px;
 }
 
-/* float area where shape floats */
-.floatarea {
-  position: relative;
-  width: 90%;
-  max-width: 300px;
-  height: 30vh;
-  margin: 0 auto;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-/* The floating shape */
 #shape {
   position: absolute;
   display: none;
   transform: translate(-50%, -50%);
- 
+  z-index: 10;
+  cursor: pointer;
 }
 
-/* this style will adjust webpage to screen size*/
+/* Responsive style for small screens */
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8em;
@@ -54,7 +45,8 @@ p {
     font-size: 1em;
   }
 
-  .floatarea {
-    height: 50vh;
+  #shape {
+    max-width: 150px;
+    max-height: 150px;
   }
 }
