@@ -18,7 +18,7 @@ function move() {
   var screenWidth = window.innerWidth;
   var screenHeight = window.innerHeight;
 
-  var wh = Math.floor(Math.random() * (screenWidth * 0.2)) + screenWidth * 0.1; // 10–30% of screen
+  var wh = Math.floor(Math.random() * (screenWidth * 0.2)) + screenWidth * 0.1;
   var radius = Math.floor(Math.random() * 51) + "%";
 
   var maxLeft = screenWidth - wh;
