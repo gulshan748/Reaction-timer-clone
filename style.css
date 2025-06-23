@@ -30,7 +30,7 @@ p {
 #shape {
   position: absolute;
   display: none;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, 0%);
   z-index: 10;
   cursor: pointer;
 }
