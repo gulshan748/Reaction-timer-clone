@@ -33,7 +33,7 @@ function move() {
   shape.style.left = left + "px";
   shape.style.top = top + "px";
   shape.style.backgroundColor = getRandomColor();
-  shape.style.borderRadius = radius;
+  
   shape.style.display = "block";
 
   start = new Date().getTime();
